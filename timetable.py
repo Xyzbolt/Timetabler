@@ -12,7 +12,7 @@ class Timetable():
         
     def addsubjects(self):
         self.subjects = [{"CS": 2, "Bio": 1, "Acc": 1, "Math": 2, "Psy": 1, "Phy": 2, "Eco": 1, "Law": 1, "Chem": 2, "Bus" : 2, "Soc": 1, "Urd": 1},
-                         {"CS": 2, "Bio": 1, "Acc": 1, "Math": 2, "Psy": 1, "Phy": 3, "Eco": 1, "Law": 1, "Chem": 2, "Bus" : 2, "Soc": 1, "Urd": 1}]
+                         {"CS": 2, "Bio": 1, "Acc": 1, "Math": 2, "Psy": 1, "Phy": cw2, "Eco": 1, "Law": 1, "Chem": 2, "Bus" : 2, "Soc": 1, "Urd": 1}]
         self.sectiongroups = [2 , 3]
         for x in range(self.sections):
         #     self.sectiongroups.append(0)
@@ -114,6 +114,8 @@ class Timetable():
                 print("==========")
                 for day in timetable:
                     print(timetable[day])
-                    
+
+    def passtable(self):
+        return self.timetables
 
 
